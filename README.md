@@ -88,4 +88,42 @@ The Streamlit app contains two tabs. One for Price prediction and other for Stat
 
     • from collections import Counter
 
+**4.Process**
+
+    • Data is extracted from a csv file and stored as a pandas Dataframe
+
+    • Data cleaning is done and null values are dropped which accounts to less than 1% of data
+
+    • Skewness of continuous variables are calculated and logarthmic transformation is applied as the data is heavily skewed
+
+    • Skewness, distribution and outliers of the continuous variables are visualized and certain negative values present are also dropped
+
+    • Multi variate analysis is performed and heatmap is visualized for the continuous variables
+
+    • Regression model is built using Decision tree which gives an r2 value of 0.93
+
+    • Data which has the status values other than 'Won' and 'Lost' are dropped
+
+    • Classification data is assessed for class imbalance
+
+    • The heavily imbalanced data is resampled and balanced using SMOTE ENN
+
+    • Two Classification models are built using Logistic Regression and Decision tree which are compared using their evaluation metrics
+
+    • The decision tree classifier model which gives 97% accuracy is chosen
+
+    • The selected models are pickled which can be used in the Streamlit app file
+
+    • A simple Streamlit UI is built where user enters the required values and the predictions are printed
+
+    
+**NOTE:**
+
+  • The EDA.ipynb file contains the code for data extraction, pre processing, EDA and Machine learning models
+    
+  • The Copper_dasboard.py file consists of the code for Streamlit dashboard creation
+
+  • Data is provided in the project problem statement pdf as a excel file which is converted to csv for quick data extraction
+
+  • The pickled models are also uploaded which can be used in the Streamlit file
   
