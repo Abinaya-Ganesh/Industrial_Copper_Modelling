@@ -2,9 +2,13 @@
 Building a Regression model to predict the selling price of copper and building a Classification model to predict the status of a potential lead. End User can provide necessary details on a Streamlit app and get the predictions | Python | ML | EDA | Sklearn | Seaborn | Matplotlib | Streamlit |
 
 **Introduction**
+
 A copper Industry's data is provided using which a regression model is to be built to predict the selling price of copper and classification model to predict the status of a potential lead customer. A simple Streamlit app is built where user can provide the required details to get the predictions.
 
+![UI](https://github.com/Abinaya-Ganesh/Industrial_Copper_Modelling/assets/162968618/651cd4a0-8a0a-4cf2-a89a-c9407e91b5c7)
+
 **User Guide**
+
 The Streamlit app contains two tabs. One for Price prediction and other for Status prediction. Input all the necessary details and get the predictions. 
 
 **Developer Guide**
